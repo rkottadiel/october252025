@@ -1,294 +1,87 @@
-/* iPhone 16 - 1 */
+/* Base Container */
+body {
+    position: relative;
+    width: 100%;  /* Make the body take up full width */
+    height: 100%;  /* Make the body take up full height */
+    background: #D9D9D9;
+}
 
-position: relative;
-width: 393px;
-height: 852px;
-
-background: #D9D9D9;
-
-
-/* BodyBackgroundImage */
-
-position: absolute;
-width: 342px;
-height: 489px;
-left: 25px;
-top: 102px;
-
-background: url(the-chaffins-A-y2ucHDvkM-unsplash.jpg);
-
+/* Background Image */
+body::before {
+    content: "";
+    position: absolute;
+    width: 342px;
+    height: 489px;
+    left: 25px;
+    top: 102px;
+    background: url('assets/the-chaffins-A-y2ucHDvkM-unsplash.jpg') no-repeat center center;
+    background-size: cover;
+}
 
 /* Frame 1 */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 24px;
-
-position: absolute;
-width: 318px;
-height: 90px;
-left: 12px;
-top: 14px;
-
-
-
-/* About Us */
-
-width: 90px;
-height: 90px;
-
-background: #D9D9D9;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-/* Location */
-
-width: 90px;
-height: 90px;
-
-background: #D9D9D9;
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* About Us */
-
-width: 90px;
-height: 90px;
-
-background: #D9D9D9;
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
-
-/* NavFrame */
-
-position: absolute;
-width: 393px;
-height: 49px;
-left: 0px;
-top: 0px;
-
-background: #0C372C;
-
-
-/* Frame 2 */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 10px;
-gap: 10px;
-
-position: absolute;
-width: 295px;
-height: 52px;
-left: 57px;
-top: 0px;
-
-
-
-/* Frame 3 */
-
-/* Auto layout */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 10px;
-
-width: 299px;
-height: 32px;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-/* Navigation Bar */
-
-/* Auto layout */
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px 37px;
-gap: 20px;
-
-width: 299px;
-height: 32px;
-
-background: #0C372C;
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-
-
-/* Our Story */
-
-width: 52px;
-height: 14px;
-
-font-family: 'Croissant One';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 14px;
-text-align: center;
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 0;
-flex-grow: 0;
-
-
-/* RSVP */
-
-width: 27px;
-height: 14px;
-
-font-family: 'Croissant One';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 14px;
-text-align: center;
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
-
-/* Registry */
-
-width: 44px;
-height: 14px;
-
-font-family: 'Croissant One';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 14px;
-text-align: center;
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-
-
-/* Trip Planner */
-
-width: 69px;
-height: 14px;
-
-font-family: 'Croissant One';
-font-style: normal;
-font-weight: 400;
-font-size: 10px;
-line-height: 14px;
-text-align: center;
-
-color: #FFFFFF;
-
-
-/* Inside auto layout */
-flex: none;
-order: 3;
-flex-grow: 0;
-
+.frame1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 318px;
+    height: 90px;
+    left: 12px;
+    top: 14px;
+}
+
+.frame1 > div {
+    width: 90px;
+    height: 90px;
+    background: #D9D9D9;
+}
+
+/* Navigation Frame */
+.nav-frame {
+    position: absolute;
+    width: 100%;
+    height: 49px;
+    left: 0;
+    top: 0;
+    background: #0C372C;
+}
+
+.nav-frame .nav-item {
+    font-family: 'Croissant One';
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Example for adjusting items within Flex Containers */
+.nav-frame .nav-item {
+    width: 52px; /* Adjust to your specific width */
+    height: 14px; /* Adjust to your specific height */
+    margin-right: 20px; /* Spacing between items */
+}
 
 /* Rectangle 1 */
-
-position: absolute;
-width: 393px;
-height: 4px;
-left: 0px;
-top: 45px;
-
-
-
-/* Rectangle 1 */
-
-position: absolute;
-left: 0%;
-right: 0%;
-top: 0%;
-bottom: 0%;
-
-background: #FFFFFF;
-
-
-/* Group 1 */
-
-position: absolute;
-width: 57px;
-height: 56px;
-left: 25px;
-top: 10px;
-
-
-
-/* Rectangle 3 */
-
-position: absolute;
-width: 57px;
-height: 56px;
-left: 25px;
-top: 10px;
-
-background: url(Untitled_Artwork 1.jpg);
-
+.rectangle1 {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 45px;
+    background: #FFFFFF;
+}
 
 /* Melissa & Matt */
-
-position: absolute;
-width: 220px;
-height: 122px;
-left: 94px;
-top: 24px;
-
-font-family: 'Ballet';
-font-style: normal;
-font-weight: 400;
-font-size: 48px;
-line-height: 91px;
-display: flex;
-align-items: center;
-text-align: center;
-/* hanging-punctuation is currently only supported in Safari. */
-hanging-punctuation: first last;
-text-transform: capitalize;
-
-color: #000000;
-
-backdrop-filter: blur(2px);
-/* Note: backdrop-filter has minimal browser support */
+.melissa-matt {
+    position: absolute;
+    width: 220px;
+    height: 122px;
+    left: 94px;
+    top: 24px;
+    font-family: 'Ballet';
+    font-size: 48px;
+    line-height: 91px;
+    text-align: center;
+    color: #000000;
+}
