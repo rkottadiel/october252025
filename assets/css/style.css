@@ -1,87 +1,237 @@
-/* Base Container */
-body {
-    position: relative;
-    width: 100%;  /* Make the body take up full width */
-    height: 100%;  /* Make the body take up full height */
-    background: #D9D9D9;
-}
+/* iPhone 16 - 1 */
 
-/* Background Image */
-body::before {
-    content: "";
-    position: absolute;
-    width: 342px;
-    height: 489px;
-    left: 25px;
-    top: 102px;
-    background: url('assets/the-chaffins-A-y2ucHDvkM-unsplash.jpg') no-repeat center center;
-    background-size: cover;
-}
+position: relative;
+width: 1440px;
+height: 1024px;
 
-/* Frame 1 */
-.frame1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 24px;
-    position: absolute;
-    width: 318px;
-    height: 90px;
-    left: 12px;
-    top: 14px;
-}
+background: #D9D9D9;
 
-.frame1 > div {
-    width: 90px;
-    height: 90px;
-    background: #D9D9D9;
-}
 
-/* Navigation Frame */
-.nav-frame {
-    position: absolute;
-    width: 100%;
-    height: 49px;
-    left: 0;
-    top: 0;
-    background: #0C372C;
-}
+/* BodyBackgroundImage */
 
-.nav-frame .nav-item {
-    font-family: 'Croissant One';
-    font-size: 10px;
-    line-height: 14px;
-    color: #FFFFFF;
-    text-align: center;
-}
+position: absolute;
+width: 1352px;
+height: 981px;
+left: 44px;
+top: 0px;
 
-/* Example for adjusting items within Flex Containers */
-.nav-frame .nav-item {
-    width: 52px; /* Adjust to your specific width */
-    height: 14px; /* Adjust to your specific height */
-    margin-right: 20px; /* Spacing between items */
-}
+background: url(the-chaffins-A-y2ucHDvkM-unsplash.jpg);
+
+
+/* Melissa & Matthew */
+
+position: absolute;
+width: 825px;
+height: 243px;
+left: 307px;
+top: 209px;
+
+font-family: 'Ballet';
+font-style: normal;
+font-weight: 400;
+font-size: 128px;
+line-height: 243px;
+display: flex;
+align-items: center;
+text-align: center;
+/* hanging-punctuation is currently only supported in Safari. */
+hanging-punctuation: first last;
+text-transform: capitalize;
+
+color: #0C372C;
+
+text-shadow: 0px 4px 4px #B6B6B6;
+
+
+/* NavFrame */
+
+position: absolute;
+width: 1440px;
+height: 95px;
+left: 0px;
+top: 0px;
+
+background: #0C372C;
+
+
+/* Frame 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 1334px;
+height: 52px;
+left: 42px;
+top: 21px;
+
+
+
+/* Frame 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 40px;
+
+width: 1321px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Navigation Bar */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+padding: 0px 37px;
+gap: 100px;
+
+width: 1324px;
+height: 32px;
+
+background: #0C372C;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Our Story */
+
+width: 103px;
+height: 28px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* RSVP */
+
+width: 53px;
+height: 28px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Registry */
+
+width: 88px;
+height: 28px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Trip Planner */
+
+width: 138px;
+height: 28px;
+
+font-family: 'Croissant One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 28px;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
 
 /* Rectangle 1 */
-.rectangle1 {
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    top: 45px;
-    background: #FFFFFF;
-}
 
-/* Melissa & Matt */
-.melissa-matt {
-    position: absolute;
-    width: 220px;
-    height: 122px;
-    left: 94px;
-    top: 24px;
-    font-family: 'Ballet';
-    font-size: 48px;
-    line-height: 91px;
-    text-align: center;
-    color: #000000;
-}
+position: absolute;
+width: 1440px;
+height: 4px;
+left: 0px;
+top: 73px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #FFFFFF;
+
+
+/* Group 1 */
+
+position: absolute;
+width: 163px;
+height: 149px;
+left: 64px;
+top: 21px;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 163px;
+height: 149px;
+left: 64px;
+top: 21px;
+
+background: url(Untitled_Artwork 1.jpg);
